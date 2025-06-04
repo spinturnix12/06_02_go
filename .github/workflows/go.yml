@@ -31,7 +31,7 @@ jobs:
           curl -v https://localhost:8443
           kill $!
     - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4
         with:
           name: binary
           path: ./dummy-server.bin
